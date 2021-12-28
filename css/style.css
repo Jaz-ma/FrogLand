@@ -96,7 +96,9 @@ nav a{
 nav a:hover{
   background-color: yellowgreen;
 }
-
+.Current{
+  background-color: yellowgreen;
+}
 #contact-bar a:hover {
   background-color: yellowgreen;
 }
