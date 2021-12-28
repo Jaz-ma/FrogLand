@@ -26,6 +26,7 @@ body{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: lightgreen;
+
 }
 
 /* Handle on hover */
@@ -92,12 +93,12 @@ nav a{
   justify-content: center;
   flex: 1;
 }
-
-nav a:hover .link-text{
-  color: yellowgreen;
+nav a:hover{
+  background-color: yellowgreen;
 }
-#contact-bar a:hover .link-text{
-  color: yellowgreen;
+
+#contact-bar a:hover {
+  background-color: yellowgreen;
 }
 .box-2 h1{
     
