@@ -53,10 +53,11 @@ body{
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   background-color: cornsilk;
   justify-content: end;
+
 }
 #contact-bar{
   display: flex;
@@ -91,10 +92,12 @@ body{
   display: flex; 
   align-items: center;
   justify-content: center;
+  transition: 200ms ease;
   flex: 1;
 }
 #nav-bar a:hover{
-  background-color: yellowgreen;
+  background: yellowgreen;
+  
 }
 .Current{
   background-color: yellowgreen;
@@ -180,8 +183,8 @@ body{
 .frog-party{
 display: flex;
 justify-content: center;
-height: calc(100vh - 15rem) ;
-padding-top: 5rem;
+height: calc(100vh - 14rem) ;
+padding-top: 4rem;
 }
 .frog-party img{
   width: 75%;
@@ -193,7 +196,7 @@ padding-top: 5rem;
   padding-bottom: 5rem;
 }
 svg{
- height: 5rem;
+ height: 4rem;
  width: 50%;
  flex: 1;
  color: black;
@@ -205,9 +208,42 @@ background-color: yellowgreen;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.about{
+  flex: 1;
+  max-height: 5rem;
+}
+.Hidden{
+  flex: 2;
+  display: none;
+}
+.column{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  background: cornsilk;
+  transition:  125ms ease;
+}
+.column:hover{
+  height: 14rem;
   
 }
-
+.column:hover .Hidden{
+  display: block;
+}
+.column:hover .home{
+  background: yellowgreen;
+}
+.column:hover .news{
+  background: yellowgreen;
+}
+.column:hover .about{
+  background: yellowgreen;
+}
+.column:hover .contact{
+  background: yellowgreen;
+}
 @media only screen and (min-width:600px){
 .box-2 img{
   display: block;
@@ -263,5 +299,7 @@ background-color: yellowgreen;
   height: 5rem;
   width: 100vw;
 }
-
+.column{
+  height: 3rem;
+}
 }
