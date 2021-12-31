@@ -55,8 +55,9 @@ body{
   width: 100vw;
   height: 4rem;
   position: fixed;
-  background-color: cornsilk;
+  background-color: rgba(255, 248, 220,1);
   justify-content: end;
+ 
 
 }
 #contact-bar{
@@ -96,14 +97,14 @@ body{
   flex: 1;
 }
 #nav-bar a:hover{
-  background: yellowgreen;
+  background: rgba(154,205,50,0.6);
   
 }
 .Current{
-  background-color: yellowgreen;
+  background-color: rgba(154,205,50,0.6);
 }
 #contact-bar a:hover {
-  background-color: yellowgreen;
+  background-color: rgba(154,205,50,0.6);
 }
 .box-2 h1{
     
@@ -200,14 +201,16 @@ svg{
  width: 50%;
  flex: 1;
  color: black;
-background-color: yellowgreen;
+
  
 }
 #Logo{
+  border:none;
   flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(154,205,50,0.6);
 }
 .about{
   flex: 1;
@@ -233,17 +236,48 @@ background-color: yellowgreen;
   display: block;
 }
 .column:hover .home{
-  background: yellowgreen;
+  background: rgba(154,205,50,0.3);
 }
 .column:hover .news{
-  background: yellowgreen;
+  background: rgba(154,205,50,0.3);
 }
 .column:hover .about{
-  background: yellowgreen;
+  background: rgba(154,205,50,0.3);
 }
 .column:hover .contact{
-  background: yellowgreen;
+  background: rgba(154,205,50,0.3);
 }
+.Back-to-top{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 29em;
+  right: 0;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  transition: all 0.7s ease-in-out;
+  opacity: 0;
+  
+}
+.Back-to-top svg{
+height: 15rem;
+color: yellowgreen;
+}
+.active{
+  opacity: 0.7;
+  bottom: 1em;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  }
+  .active:hover{
+    opacity: 0.3;
+    
+  }
+  .columns {
+    display: flex;
+    flex: 2;
+  }
 @media only screen and (min-width:600px){
 .box-2 img{
   display: block;
@@ -252,6 +286,9 @@ background-color: yellowgreen;
   margin-bottom: 50px;
   width: 50%;
 
+}
+.List{
+  display: none;
 }
 
 .container img{
@@ -275,7 +312,7 @@ background-color: yellowgreen;
 }
 @media only screen and (max-width:600px){
   svg{
-    height: 3rem;
+    height: 2rem;
     width: 50%;
    }
 #nav-bar{
@@ -302,4 +339,27 @@ background-color: yellowgreen;
 .column{
   height: 3rem;
 }
+#Logo{
+  flex: 1;
+}
+.Logo-frog{
+  
+}
+.List{
+  color: black;
+  display: none;
+}
+#Logo:focus .List {
+  color: cornsilk;
+
+}
+.Back-to-top {
+ padding-bottom: 3.5rem;
+ padding-right: 0; 
+}
+.Back-to-top svg{
+  height: 10rem;
+  }
+ 
+  
 }
